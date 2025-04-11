@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Paradise - Digital Tourism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background: url('image/sehlabathebe.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .hero {
+      background: url('image/maluti.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero button {
+      padding: 12px 24px;
+      font-size: 1.1em;
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      width: 250px;
+      background: #fff;
+      color: #000;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    table {
+      margin: auto;
+      color: #fff;
+      border-collapse: collapse;
+    }
+    table th, table td {
+      border: 1px solid #fff;
+      padding: 10px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background: #ff9800;
+      color: #fff;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explore Paradise</h1>
+  <nav>
+    <ul>
+        <li><a href="index_1.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mission.html">Mission</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Discover Amazing Places In Lesotho</h2>
+  <p>Find your next adventure with us!</p>
+  <button onclick="document.getElementById('destinations').scrollIntoView({behavior: 'smooth'});">Explore Now</button>
+</section>
+
+<section id="mission">
+  <h2>Our Mission</h2>
+  <p>To promote the natural beauty, cultural richness, and unique adventures of Lesotho by providing an innovative, accessible, and engaging digital tourism platform that connects travelers with unforgettable experiences while empowering local communities and preserving our heritage.</p>
+</section>
+
+<section id="destinations">
+  <h2>Top Destinations</h2>
+  <div class="container">
+    <div class="card">
+      <img src="image/sehlabathebe.jpg" alt="Sehlabathebe">
+      <h3>Sehlabathebe National Park</h3>
+    </div>
+    <div class="card">
+      <img src="image/lihlaba.jpg" alt="Maluti Mountains">
+      <h3>Maluti Mountains</h3>
+    </div>
+    <div class="card">
+      <img src="image/maletsunyane.jpg" alt="Maletsunyane Waterfall">
+      <h3>Maletsunyane Waterfall</h3>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="container">
+    <div class="card"><img src="image/mekhoro.jpg" alt="mekhoro"></div>
+    <div class="card"><img src="image/lithaba.jpg" alt="lithaba"></div>
+    <div class="card"><img src="image/qome.jpg" alt="qome"></div>
+    <div class="card"><img src="image/lipere.jpg" alt="lipere"></div>
+    <div class="card"><img src="image/katse.jpg" alt="katse"></div>
+  </div>
+</section>
+
+<section id="tech">
+  <h2>Latest Technologies</h2>
+  <table>
+    <tr><th>New Technology</th><th>Researcher</th></tr>
+    <tr><td>Progressive Web Apps (PWAs)</td><td>Student 1</td></tr>
+    <tr><td>AI Chatbots</td><td>Student 2</td></tr>
+    <tr><td>Virtual Reality (VR)</td><td>Student 3</td></tr>
+    <tr><td>Augmented Reality (AR)</td><td>Student 4</td></tr>
+    <tr><td>Geolocation Integration</td><td>Student 5</td></tr>
+    <tr><td>Blockchain Bookings</td><td>Student 6</td></tr>
+    <tr><td>Big Data Analytics</td><td>Student 7</td></tr>
+    <tr><td>IoT Smart Tourism</td><td>Student 8</td></tr>
+    <tr><td>Cloud Infrastructure</td><td>Student 9</td></tr>
+    <tr><td>Voice Search</td><td>Student 10</td></tr>
+  </table>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Explore Paradise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
